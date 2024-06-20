@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yodya Foundation Inc</title>
+    
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <p>Prepare For New Future</p>
+            <h1>Yodya Foundation Inc</h1>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </div>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-image: url('your-image-path.jpg'); /* Add the path to your background image here */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+            text-align: left;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .header-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+        }
+        .header-content h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .header-content p {
+            font-size: 1.2em;
+            margin: 5rem 0 5rem;
+        }
+        .btn {
+            background-color: #ff5c57; /* Button color */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            display: inline-block;
+        }
+    </style>
+</body>
+</html>
