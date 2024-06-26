@@ -151,3 +151,53 @@ color: #ffcc00; /* Change color on hover */
 .btn-green {
     background-color: #00ff00;
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #4a0e8f, #0e4a8f);
+    color: white;
+}
+.image {
+    flex: 1;
+    padding-right: 20px;
+}
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+.content {
+    flex: 2;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-yellow {
+    background-color: #ffd700;
+    color: #000;
+}
+.btn-green {
+    background-color: #00ff00;
+    color: #000;
+}
