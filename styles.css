@@ -55,8 +55,9 @@ header {
 .header-content {
     position: absolute;
     top: 50%;
-    left: 50px;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 .header-content p {
     font-size: 1.2em;
