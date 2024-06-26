@@ -104,8 +104,8 @@ color: #ffcc00; /* Change color on hover */
 .container {
     text-align: center;
     padding: 50px;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 .title {
     font-size: 2em;
