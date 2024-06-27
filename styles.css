@@ -101,14 +101,15 @@ header {
     margin-bottom: 20px;
 }
 .video-section {
+    margin-top: 10rem;
     text-align: center; /* Center the content in the section */
 }
 
 .video-container {
-    max-width: 100%;
-    overflow: hidden;
+    width: 50%;
+    margin: 0 auto; /* Center the container */
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 28.125%; /* 16:9 aspect ratio for 50% width */
     height: 0;
 }
 
@@ -116,8 +117,21 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn-yellow, .btn-green {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
 }
 
 .buttons {
