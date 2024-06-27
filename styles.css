@@ -304,7 +304,7 @@ padding-bottom: 2rem;}
 }
 .image-block img {
     width: 100%;
-    height: 80%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -324,7 +324,7 @@ padding-bottom: 2rem;}
     background-image: url('2.png');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     color: white;
     position: relative;
 }
