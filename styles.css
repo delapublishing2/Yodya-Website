@@ -126,25 +126,95 @@ header {
 }
 
 /* About Section */
+/* About Section */
 .container-about {
     background-image: url('SACRIFICATEUR  LYVENS GUERRIER -  YODYA EXJESWED A LINAUGURATION PRESIDENTIELLE 2013 WASHINGTON REFOCUSED.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
     color: white;
-    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 50px; /* Add padding to the left */
+}
+
+.container-about .content {
+    background-color: rgba(0, 0, 0, 0.7); /* Add background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px; /* Limit the width for better readability */
+}
+
+.container-about img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* About Section Specific Styles */
+.container-about .block {
+    margin-bottom: 50px;
+}
+
+.container-about h1 {
+    color: #fff; /* Change to white for better readability */
+    border-bottom: 8px solid #ffcc00;
+    padding-bottom: 10px;
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.container-about .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container-about .image {
     flex: 1;
+    margin-right: 20px;
 }
-.container-about .content {
-    flex: 2;
-    padding-left: 50px;
-}
-.container-about img {
+
+.container-about .image img {
     max-width: 100%;
     height: auto;
+}
+
+.container-about .content {
+    flex: 2;
+    text-align: left; /* Align text to the left */
+}
+
+.container-about .objectives {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-about .objective {
+    flex-basis: 22%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-about .objective img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.container-about .yellow-btn {
+    background-color: #FFC107;
+    color: black; /* Ensure text is readable */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.container-about .green-btn {
+    background-color: #4CAF50;
+    color: white; /* Ensure text is readable */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 /* Block and Content Styles */
