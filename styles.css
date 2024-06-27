@@ -252,12 +252,13 @@ header {
 h1 {
     color: #333;
     border-bottom: 8px solid #ffcc00;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
     margin-left: 20rem;
     margin-right: 20rem; 
     font-size: xx-large;
 }
-p {font-size: medium;}
+p {font-size: medium;
+padding-bottom: 1rem;}
 .flex-container {
     display: flex;
     justify-content: space-between;
