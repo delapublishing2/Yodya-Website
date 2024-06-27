@@ -203,16 +203,26 @@ h1 {
     height: 100%;
     object-fit: cover;
 }
+
 .overlay-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
+}
+
+.container-img {
+    background-image: url('2.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    position: relative;
 }
 .overlay-text h2 {
     font-size: 2em;
