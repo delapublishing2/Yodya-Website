@@ -100,11 +100,27 @@ header {
     font-size: 2em;
     margin-bottom: 20px;
 }
-.video-section {margin-top: 10rem;}
-.video-container img {
-    max-width: 100%;
-    height: auto;
+.video-section {
+    margin-top: 10rem;
+    text-align: center; /* Center the content in the section */
 }
+
+.video-container {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .buttons {
     display: flex;
     justify-content: center;
