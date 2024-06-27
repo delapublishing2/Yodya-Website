@@ -214,20 +214,16 @@ h1 {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
-    width: 80%; /* Ensure it fits within the container */
-    box-sizing: border-box; /* Include padding in width */
 }
 
 .container-img {
     background-image: url('2.png');
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Ensure it takes the full viewport height */
+    height: 50vh;
     color: white;
-    position: relative; /* Ensure positioning context */
-    overflow: hidden; /* Prevent content overflow */
+    position: relative;
 }
-
 .overlay-text h2 {
     font-size: 2em;
     margin-bottom: 10px;
