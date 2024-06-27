@@ -267,7 +267,7 @@ header {
 
 .container-about .green-btn {
     background-color: #5BFD4D;
-    color: white; /* Ensure text is readable */
+    color: black; /* Ensure text is readable */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 25px;
