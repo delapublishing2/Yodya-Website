@@ -246,7 +246,7 @@ header {
 
 /* Block and Content Styles */
 .block {
-    margin-bottom: 50px;
+    margin-bottom: 10rem;
 }
 h1 {
     color: #333;
@@ -256,6 +256,7 @@ h1 {
     margin-right: 20rem; 
     font-size: xx-large;
 }
+p {font-size: medium;}
 .flex-container {
     display: flex;
     justify-content: space-between;
