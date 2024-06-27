@@ -202,7 +202,7 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-40%, -50%);
+    transform: translate(-50%, -40%);
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
