@@ -106,7 +106,7 @@ header {
 }
 
 .video-container {
-    max-width: 100%;
+    max-width: 50%;
     overflow: hidden;
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
