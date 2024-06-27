@@ -126,8 +126,6 @@ header {
 }
 
 /* About Section */
-/* About Section */
-/* About Section */
 .container-about {
     background-image: url('SACRIFICATEUR  LYVENS GUERRIER -  YODYA EXJESWED A LINAUGURATION PRESIDENTIELLE 2013 WASHINGTON REFOCUSED.png');
     background-size: cover;
@@ -186,7 +184,7 @@ header {
 .container-about h1 {
     color: #fff; /* Change to white for better readability */
     border-bottom: 8px solid #ffcc00;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
     margin-bottom: 20px; /* Add margin for spacing */
     margin: auto;
 }
@@ -235,7 +233,7 @@ header {
     color: black; /* Ensure text is readable */
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 .container-about .green-btn {
@@ -243,7 +241,7 @@ header {
     color: white; /* Ensure text is readable */
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 /* Block and Content Styles */
@@ -256,6 +254,7 @@ h1 {
     padding-bottom: 10px;
     margin-left: 20rem;
     margin-right: 20rem; 
+    font-size: xx-large;
 }
 .flex-container {
     display: flex;
