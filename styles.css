@@ -220,7 +220,7 @@ h1 {
     background-image: url('2.png');
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: 100vh;
     color: white;
     position: relative;
 }
