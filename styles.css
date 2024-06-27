@@ -132,15 +132,18 @@ header {
     background-position: center;
     height: 100vh;
     color: white;
-    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 50px; /* Add padding to the left */
 }
-.container-about .image {
-    flex: 1;
-}
+
 .container-about .content {
-    flex: 2;
-    padding-left: 50px;
+    background-color: rgba(0, 0, 0, 0.7); /* Add background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px; /* Limit the width for better readability */
 }
+
 .container-about img {
     max-width: 100%;
     height: auto;
@@ -150,47 +153,67 @@ header {
 .block {
     margin-bottom: 50px;
 }
+
 h1 {
-    color: #333;
+    color: #fff; /* Change to white for better readability */
     border-bottom: 8px solid #ffcc00;
     padding-bottom: 10px;
-    margin-left: 20rem;
-    margin-right: 20rem; 
+    margin-bottom: 20px; /* Add margin for spacing */
 }
+
 .flex-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .image {
     flex: 1;
     margin-right: 20px;
 }
+
 .image img {
     max-width: 100%;
     height: auto;
 }
+
 .content {
-    flex: 1;
-    text-align: right;
+    flex: 2;
+    text-align: left; /* Align text to the left */
 }
+
 .objectives {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .objective {
     flex-basis: 22%;
     text-align: center;
     margin-bottom: 20px;
 }
+
 .objective img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
 }
+
 .yellow-btn {
     background-color: #FFC107;
+    color: black; /* Ensure text is readable */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.green-btn {
+    background-color: #4CAF50;
+    color: white; /* Ensure text is readable */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 /* Image Block */
@@ -199,6 +222,7 @@ h1 {
     height: 400px;
     overflow: hidden;
 }
+
 .image-block img {
     width: 100%;
     height: 100%;
@@ -225,14 +249,15 @@ h1 {
     color: white;
     position: relative;
 }
+
 .overlay-text h2 {
     font-size: 2em;
     margin-bottom: 10px;
 }
+
 .overlay-text p {
     margin-bottom: 20px;
 }
-
 /* Contact Block */
 .contact-block {
     display: flex;
