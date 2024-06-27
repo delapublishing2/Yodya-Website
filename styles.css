@@ -285,8 +285,7 @@ h1 {
     margin-right: 20rem; 
     font-size: xx-large;
 }
-p {font-size: medium;
-padding-bottom: 2rem;}
+p {font-size: medium;}
 .flex-container {
     display: flex;
     justify-content: space-between;
