@@ -208,7 +208,7 @@ header {
 
 .container-about .content {
     flex: 2;
-    text-align: left; /* Align text to the left */
+    text-align: right; /* Align text to the left */
 }
 
 .container-about .objectives {
@@ -219,7 +219,7 @@ header {
 
 .container-about .objective {
     flex-basis: 22%;
-    text-align: center;
+    text-align: right;
     margin-bottom: 20px;
 }
 
