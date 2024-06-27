@@ -166,7 +166,7 @@ header {
     padding: 0 50px; /* Add padding to the sides */
 }
 
-.container-about .content {
+.container-about .content-about {
     padding: 20px;
     border-radius: 10px;
     max-width: 600px; /* Limit the width for better readability */
@@ -206,7 +206,7 @@ header {
     height: auto;
 }
 
-.container-about .content {
+.container-about .content-about {
     flex: 2;
     text-align: right; /* Align text to the left */
 }
