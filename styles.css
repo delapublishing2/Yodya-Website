@@ -436,7 +436,7 @@ padding-top: 1rem;}
 }
 /* About Us Page */
 
-.container-about-1, .container-about-fonyo {
+.container-about, .container-about-fonyo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -444,18 +444,11 @@ padding-top: 1rem;}
     color: #333;
 }
 
-.container-about-1 {
+.container-about {
     background-color: #fff;
 }
 
-.container-about-fonyo {
-    background-image: url('TRUCK IN HAITI REFOCUSED.png');
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-
-.container-about-1 .content, .container-about-fonyo .content {
+.container-about .content {
     max-width: 800px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.9);
@@ -463,7 +456,20 @@ padding-top: 1rem;}
     text-align: center;
 }
 
-.container-about-fonyo .content {
-    background: rgba(0, 0, 0, 0.7);
+.container-about-fonyo {
+    background-image: url('TRUCK IN HAITI REFOCUSED.png');
+    background-size: cover;
+    background-position: center;
     color: white;
+    height: 100vh;
+    position: relative;
+}
+
+.container-about-fonyo .content {
+    max-width: 800px;
+    padding: 20px;
+    background: none; /* Remove background */
+    text-align: left; /* Align text to the left */
+    position: absolute;
+    right: 10%;
 }
