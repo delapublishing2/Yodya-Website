@@ -446,6 +446,7 @@ padding-top: 1rem;}
 
 .container-about {
     background-color: #fff;
+    margin: auto;
 }
 
 .container-about .content {
