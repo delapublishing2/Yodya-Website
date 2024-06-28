@@ -438,7 +438,7 @@ padding-top: 1rem;}
 
 .container-about, .container-about-fonyo {
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: center;
     padding: 50px 20px;
     color: #333;
@@ -453,7 +453,7 @@ padding-top: 1rem;}
     padding: 20px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    text-align: center;
+    text-align: right;
 }
 
 .container-about-fonyo {
@@ -469,7 +469,7 @@ padding-top: 1rem;}
     max-width: 800px;
     padding: 20px;
     background: none; /* Remove background */
-    text-align: left; /* Align text to the left */
+    text-align: right; /* Align text to the left */
     position: absolute;
     right: 10%;
 }
