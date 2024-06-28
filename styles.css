@@ -482,3 +482,9 @@ padding-top: 1rem;}
 
 .container-about-fonyo .content h1 {margin: auto;
 color: white; }
+
+/* Meet our team */
+
+.about-block-meet .btn-yellow {margin: auto;
+justify-content: center;
+justify-items: center;}
