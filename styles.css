@@ -436,7 +436,7 @@ padding-top: 1rem;}
 }
 /* About Us Page */
 
-.container-about, .container-about-fonyo {
+.container-about-1, .container-about-fonyo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -444,12 +444,12 @@ padding-top: 1rem;}
     color: #333;
 }
 
-.container-about {
+.container-about-1 {
     background-color: #fff;
     margin: auto;
 }
 
-.container-about .content {
+.container-about-1 .content {
     max-width: 800px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.9);
