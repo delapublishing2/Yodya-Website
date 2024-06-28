@@ -486,7 +486,7 @@ color: white; }
 /* Meet our team */
 
 .team-2 .objective {
-    flex-basis: 200px;
+    flex-basis: 50%;
     text-align: center;
     margin-bottom: 20px;
 }
