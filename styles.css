@@ -438,7 +438,7 @@ padding-top: 1rem;}
 
 .container-about, .container-about-fonyo {
     display: flex;
-    align-items: right;
+    align-items: center;
     justify-content: center;
     padding: 50px 20px;
     color: #333;
@@ -453,7 +453,7 @@ padding-top: 1rem;}
     padding: 20px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    text-align: right;
+    text-align: center;
 }
 
 .container-about-fonyo {
