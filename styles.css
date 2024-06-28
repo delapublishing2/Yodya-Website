@@ -434,3 +434,36 @@ padding-top: 1rem;}
         margin-top: 20px;
     }
 }
+/* About Us Page */
+
+.container-about-1, .container-about-fonyo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    color: #333;
+}
+
+.container-about-1 {
+    background-color: #fff;
+}
+
+.container-about-fonyo {
+    background-image: url('path-to-your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.container-about-1 .content, .container-about-fonyo .content {
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-about-fonyo .content {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
