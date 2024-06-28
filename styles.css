@@ -449,6 +449,11 @@ padding-top: 1rem;}
     margin: auto;
 }
 
+
+.container-about-1 h1 {
+    margin: auto;
+}
+
 .container-about-1 .content {
     max-width: 800px;
     padding: 20px;
