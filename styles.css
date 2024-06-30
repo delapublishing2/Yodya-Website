@@ -95,6 +95,16 @@ header {
     color: white;
     position: relative;
 }
+
+.header .about-page {
+    background-image: url('FONDATION YODYA EN ACTION A WASHINGTON REFOCUSED.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    position: relative;
+
+}
 .header-content {
     position: absolute;
     top: 50%;
