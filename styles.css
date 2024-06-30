@@ -110,6 +110,10 @@ header {
     margin-top: 2rem;
     color: white;
 }
+.logo img
+{
+   max-width: 30%; 
+}
 .btn {
     background-color: #5BFD4D;
     color: black;
