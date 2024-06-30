@@ -150,6 +150,10 @@ header {
     background-image: url('STAFF MEMBERS OF YODYA FOUNDATION IN ACTION SAINT MICHEL DE LATTALAYE - HAITI REFOCUSED.jpg'); /* Replace with the actual path to your image */
 }
 
+.header-home {
+    background-image: url('MAIN IMAGE REFOCUSED.png'); /* Replace with the actual path to your image */
+}
+
 
 /* General Container */
 .container {
