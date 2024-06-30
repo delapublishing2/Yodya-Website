@@ -145,12 +145,9 @@ header {
 }
 
 /* Add other page-specific header styles here */
-.header-contact {
-    background-image: url('path/to/contact-image.jpg'); /* Replace with the actual path to your image */
-}
 
-.header-services {
-    background-image: url('path/to/services-image.jpg'); /* Replace with the actual path to your image */
+.header-team {
+    background-image: url('STAFF MEMBERS OF YODYA FOUNDATION IN ACTION SAINT MICHEL DE LATTALAYE - HAITI REFOCUSED.jpg'); /* Replace with the actual path to your image */
 }
 
 
