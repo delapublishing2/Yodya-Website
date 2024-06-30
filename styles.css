@@ -87,8 +87,8 @@ header {
 }
 
 /* Header Section */
+/* General Header Styles */
 .header {
-    background-image: url('MAIN IMAGE REFOCUSED.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -96,20 +96,24 @@ header {
     position: relative;
 }
 
-.header .about-page {
-    background-image: url('FONDATION YODYA EN ACTION A WASHINGTON REFOCUSED.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: white;
-    position: relative;
-
+/* Dark Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: 1;
 }
+
+/* Header Content Styles */
 .header-content {
     position: absolute;
     top: 50%;
     left: 50px;
     transform: translateY(-50%);
+    z-index: 2; /* Ensure the content is above the overlay */
 }
 .header-content p {
     font-size: 1.2em;
@@ -120,6 +124,7 @@ header {
     margin-top: 2rem;
     color: white;
 }
+
 .logo img
 {
    max-width: 25%; 
@@ -133,6 +138,21 @@ header {
     display: inline-block;
     transition: background-color 0.3s ease;
 }
+
+/* About Page Header */
+.header-about {
+    background-image: url('FONDATION YODYA EN ACTION A WASHINGTON REFOCUSED.jpg'); /* Replace with the actual path to your image */
+}
+
+/* Add other page-specific header styles here */
+.header-contact {
+    background-image: url('path/to/contact-image.jpg'); /* Replace with the actual path to your image */
+}
+
+.header-services {
+    background-image: url('path/to/services-image.jpg'); /* Replace with the actual path to your image */
+}
+
 
 /* General Container */
 .container {
