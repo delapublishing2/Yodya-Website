@@ -87,7 +87,7 @@ header {
 }
 
 /* Header Section */
-.header {
+.header .main-page {
     background-image: url('MAIN IMAGE REFOCUSED.png');
     background-size: cover;
     background-position: center;
