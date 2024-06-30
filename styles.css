@@ -323,7 +323,14 @@ h1 {
     margin-left: 20rem;
     margin-right: 20rem; 
     font-size: xx-large;
+    font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
 }
+h2 {font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;}
+    
 p {font-size: medium;
 padding-top: 1rem;}
 .flex-container {
