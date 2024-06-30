@@ -402,7 +402,8 @@ font-variation-settings:
     text-align: right;
 }
 
-.block .haiti-info h1 ul li {  
+ .haiti-info h1 {  
+    Flex: 1;
     text-align: left;
 
 }
