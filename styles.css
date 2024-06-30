@@ -249,9 +249,7 @@ header {
     margin-right: auto; /* Push the content to the left */
 }
 
-.content .haiti {text-align: left;
 
-}
 
 .container-about img {
     max-width: 100%;
@@ -402,6 +400,11 @@ font-variation-settings:
 .content {
     flex: 1;
     text-align: right;
+}
+
+.block .haiti-info {  flex: 1;
+    text-align: left;
+
 }
 .objectives {
     display: flex;
