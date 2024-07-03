@@ -25,3 +25,29 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem("languagePreference", "french");
     });
 });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const donationOptions = document.querySelectorAll('input[name="donation"]');
+        const customAmountInput = document.getElementById('custom-amount');
+
+        donationOptions.forEach(option => {
+            option.addEventListener('change', function() {
+                customAmountInput.value = '';
+            });
+        });
+
+        customAmountInput.addEventListener('input', function() {
+            donationOptions.forEach(option => option.checked = false);
+        });
+
+        document.querySelector('.donate-btn').addEventListener('click', function() {
+            let selectedAmount = document.querySelector('input[name="donation"]:checked') ? document.querySelector('input[name="donation"]:checked').value : customAmountInput.value;
+            if (!selectedAmount) {
+                alert('Please select or enter a donation amount.');
+            } else {
+                // Process the donation with the selectedAmount
+                alert('Thank you for your donation of $' + selectedAmount);
+            }
+        });
+    });
+
