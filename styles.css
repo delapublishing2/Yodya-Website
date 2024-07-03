@@ -123,6 +123,7 @@ header {
     margin: 10px 0;
     margin-top: 2rem;
     color: white;
+    max-width: 500px;
 }
 
 .logo img
