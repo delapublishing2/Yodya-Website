@@ -651,3 +651,68 @@ color: white; }
     display: inline-block;
     margin-top: 20px;
 }
+
+.donation-block {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .donation-block h2 {
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  .donation-block form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .donation-block label {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .donation-block input[type="number"],
+  .donation-block input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .donation-block button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .donation-block button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .donation-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .donation-block li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .donation-block a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .donation-block a:hover {
+    color: #23527c;
+  }
