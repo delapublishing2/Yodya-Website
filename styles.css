@@ -793,3 +793,48 @@ color: white; }
 #paypal-button-container {
     margin-top: 20px;
 }
+
+/* news and events */
+
+
+.header .header-news-events {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.view-all {
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+
+.article, .video, .post {
+    flex: 1 1 30%;
+    margin: 10px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.articles, .videos, .social-posts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.article img, .post img {
+    max-width: 100%;
+    border-radius: 10px;
+}
