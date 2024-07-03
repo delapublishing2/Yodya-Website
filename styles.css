@@ -14,8 +14,8 @@ body, html {
 
 /* Navbar */
 header {
-    background-color: #000;
-    color: #fff;
+    background-color: white;
+    color: black;
     padding: 20px 0;
 }
 .navbar {
@@ -468,8 +468,8 @@ font-variation-settings:
 .contact-block {
     display: flex;
     justify-content: space-between;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 40px;
 }
 .contact-content {
