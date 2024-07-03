@@ -155,6 +155,9 @@ header {
     background-image: url('MAIN IMAGE REFOCUSED.png'); /* Replace with the actual path to your image */
 }
 
+.header-news-events {
+    background-image: url('claudia-altamimi-8taNS4BGNuc-unsplash.jpg');
+}
 
 /* General Container */
 .container {
