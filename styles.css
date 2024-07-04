@@ -1,5 +1,21 @@
 /* General Styles (PUT IN TEXT STYLES!!! ONE ENGLISH PAGE AND ONE FRENCH PAGE PUT IN PAYPAL LINKS AND LINK EVERYTHING
 (Oh, plus make sign up page in Aiwaa and also get domains and put fun facts about haiti)*/
+
+:root {
+    --primary-color: #5BFD4D;
+    --secondary-color: #ffcc00;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --white: #fff;
+    --black: #000;
+    --font-family-sans: "Nunito Sans", sans-serif;
+    --font-family-serif: "Abril Fatface", serif;
+    --font-size-base: 16px;
+    --font-size-large: 2em;
+    --font-size-medium: 1.2em;
+    --font-size-small: 1rem;
+}
+
 body, html {
     margin: 0;
     padding: 0;
