@@ -686,6 +686,68 @@ color: white; }
     margin-top: 20px;
 }
 
+/*content aligned left text rigth img */
+
+/* General block styling for info */
+.block-lefta {
+    padding: 20px;
+    background-color: #f0f0f0; /* Example background color */
+}
+
+/* Flex container styling for Haiti info */
+.haiti-flex-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Content styling for Haiti info */
+.haiti-content {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px; /* Space between content and image */
+}
+
+/* Image styling for Haiti info */
+.haiti-image {
+    flex: 1;
+    text-align: center; /* Center image within its flex item */
+}
+
+.haiti-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Additional styling for elements within the content */
+.haiti-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.haiti-content p {
+    margin-bottom: 20px;
+}
+
+.haiti-content ul {
+    list-style: none; /* Remove default list styling */
+    padding-left: 0;
+}
+
+.haiti-content ul li {
+    margin-bottom: 10px;
+    text-align: left; /* Ensure list items are aligned to the left */
+}
+
+.haiti-content .btn.yellow-btn {
+    background-color: #FFC107;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
 .donation-block {
     background: #fff;
     border-radius: 10px;
