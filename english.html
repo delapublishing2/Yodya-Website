@@ -3,106 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yodya Foundation Inc</title>
+    <meta name="description" content="Yodya Foundation Inc - Helping underprivileged families and supporting Haiti">
+    <title>Yodya Foundation Inc - Give a Hand to Underprivileged Families</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main Navigation">
             <div class="logo">
-                <a href="index.html">
+                <a href="index.html" aria-label="Home">
                     <img src="Logo YODYA.png" alt="YODYA INC Logo">
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="english.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="our-team.html">Our Team</a></li>
-                <li><a href="news-events.html">News</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="https://aiwaapp.ai/site/48120/contact-us">Contact</a></li>
+                <li><a href="english.html" aria-label="Home">Home</a></li>
+                <li><a href="about.html" aria-label="About Us">About</a></li>
+                <li><a href="our-team.html" aria-label="Our Team">Our Team</a></li>
+                <li><a href="news-events.html" aria-label="News and Events">News</a></li>
+                <li><a href="donate.html" aria-label="Donate">Donate</a></li>
+                <li><a href="https://aiwaapp.ai/site/48120/contact-us" aria-label="Contact Us">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="header header-home">
+            <div class="overlay"></div>
             <div class="header-content">
-                <h1>Help Us Give a Hand to Underprivalaged Families</h1>
+                <h1>Help Us Give a Hand to Underprivileged Families</h1>
                 <p>Give me your hand and, to them, we give.</p>
-                <a href="https://aiwaapp.ai/site/48120/contact-us" class="btn">Sponsor</a>
-                <a href="https://aiwaapp.ai/site/48120/contact-us" class="btn-yellow">Donate</a>
+                <a href="https://aiwaapp.ai/site/48120/contact-us" class="btn btn-primary">Sponsor</a>
+                <a href="donate.html" class="btn btn-secondary">Donate</a>
             </div>
         </section>
 
-       <div class="container">
-        <div class="donation-block">
-            <h2>Support Our Cause</h2>
-            <p>Your generous donations help us make a difference in the lives of many. Choose an amount or enter a custom amount to contribute.</p>
-            
-            <div class="donation-options">
-                <label>
-                    <input type="radio" name="donation" value="10">$10
-                </label>
-                <label>
-                    <input type="radio" name="donation" value="25">$25
-                </label>
-                <label>
-                    <input type="radio" name="donation" value="50">$50
-                </label>
-                <label>
-                    <input type="radio" name="donation" value="100">$100
-                </label>
+        <section class="container">
+            <div class="donation-block">
+                <h2>Support Our Cause</h2>
+                <p>Your generous donations help us make a difference in the lives of many. Choose an amount or enter a custom amount to contribute.</p>
+                
+                <form id="donationForm" action="/process-donation" method="post">
+                    <div class="donation-options">
+                        <label><input type="radio" name="donation" value="10">$10</label>
+                        <label><input type="radio" name="donation" value="25">$25</label>
+                        <label><input type="radio" name="donation" value="50">$50</label>
+                        <label><input type="radio" name="donation" value="100">$100</label>
+                    </div>
+                    
+                    <div class="custom-donation">
+                        <label for="custom-amount" class="visually-hidden">Custom donation amount</label>
+                        <input type="number" name="custom-amount" id="custom-amount" placeholder="Enter custom amount">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Donate Now</button>
+                </form>
             </div>
-            
-            <div class="custom-donation">
-                <input type="number" name="custom-amount" id="custom-amount" placeholder="Enter custom amount">
-            </div>
-            
-            <button class="donate-btn">Donate Now</button>
-        </div>
-    </div>
+        </section>
         
-    <section class="container-img">
-        <div class="overlay-text">
-            <h2>Let us have your hand</h2>
-            <p>Help support the community as a sponsor, one hand at a time. </p>
-            <a href="https://aiwaapp.ai/site/48120/contact-us" class="btn yellow-btn">SIGN UP NOW</a>
-            <a href="donate.html" class="btn-green">DONATE</a>
-        </div>
-</section>
+        <section class="container-img">
+            <div class="overlay-text">
+                <h2>Let us have your hand</h2>
+                <p>Help support the community as a sponsor, one hand at a time.</p>
+                <a href="https://aiwaapp.ai/site/48120/contact-us" class="btn btn-secondary">Sign Up Now</a>
+                <a href="donate.html" class="btn btn-primary">Donate</a>
+            </div>
+        </section>
 
-<div class="block haiti-info">
-    <div class="flex-container haiti-flex-container">
-        <div class="content haiti-content">
-            <h2>Help Us Assist Haiti</h2>
-            <p>Haiti is in crisis, and we need your hand to help us assist the country. Let us band together and support Haiti</p>
-            <ul>
-                <li>First Black Republic: Haiti is the first independent nation in Latin America and the Caribbean, and the first republic to be led by people of African descent after a successful slave rebellion against French colonial rule in the late 18th century.</li>
-                <li>Cuisine: Haitian cuisine is a delightful blend of African, French, and indigenous Taíno influences. Dishes like Griot (fried pork) and Tasso de Dinde (spiced turkey) are popular, often accompanied by rice and beans.</li>
-                <li>Artistic Heritage: Haiti has a vibrant arts scene, particularly renowned for its colorful paintings, sculptures, and handicrafts. The art often reflects the country’s history, spirituality, and everyday life.</li>
-                <li>Music and Dance: Haitian music is diverse, ranging from traditional folk songs to popular styles like compas and rara. The dances, such as the energetic kompa dance, are integral to Haitian cultural celebrations.</li>
-                <li>Citadelle Laferrière: This impressive mountaintop fortress, built in the early 19th century to defend against potential French invasion, is a UNESCO World Heritage site and a symbol of Haiti's independence.</li>
-            </ul>
-            <a href="https://aiwaapp.ai/site/48120/contact-us" class="btn yellow-btn">SIGN UP NOW</a>
-            <a href="donate.html" class="btn-green">DONATE</a>
-        </div>
-        <div class="image haiti-image">
-            <img src="claudia-altamimi-8taNS4BGNuc-unsplash.jpg" alt="FONYO Member">
-        </div>
-    </div>
-</div>
+        <section class="block haiti-info">
+            <div class="flex-container haiti-flex-container">
+                <div class="content haiti-content">
+                    <h2>Help Us Assist Haiti</h2>
+                    <p>Haiti is in crisis, and we need your hand to help us assist the country. Let us band together and support Haiti</p>
+                    <ul>
+                        <li>First Black Republic: Haiti is the first independent nation in Latin America and the Caribbean, and the first republic to be led by people of African descent after a successful slave rebellion against French colonial rule in the late 18th century.</li>
+                        <li>Cuisine: Haitian cuisine is a delightful blend of African, French, and indigenous Taíno influences. Dishes like Griot (fried pork) and Tasso de Dinde (spiced turkey) are popular, often accompanied by rice and beans.</li>
+                        <li>Artistic Heritage: Haiti has a vibrant arts scene, particularly renowned for its colorful paintings, sculptures, and handicrafts. The art often reflects the country's history, spirituality, and everyday life.</li>
+                        <li>Music and Dance: Haitian music is diverse, ranging from traditional folk songs to popular styles like compas and rara. The dances, such as the energetic kompa dance, are integral to Haitian cultural celebrations.</li>
+                        <li>Citadelle Laferrière: This impressive mountaintop fortress, built in the early 19th century to defend against potential French invasion, is a UNESCO World Heritage site and a symbol of Haiti's independence.</li>
+                    </ul>
+                    <a href="https://aiwaapp.ai/site/48120/contact-us" class="btn btn-secondary">Sign Up Now</a>
+                    <a href="donate.html" class="btn btn-primary">Donate</a>
+                </div>
+                <div class="image haiti-image">
+                    <img src="claudia-altamimi-8taNS4BGNuc-unsplash.jpg" alt="Scenic view of Haiti">
+                </div>
+            </div>
+        </section>
      
-        
         <section class="container-about">
             <div class="content-about">
                 <div class="about-header">
-                <h1>What is FONYO?</h1>
+                    <h1>What is FONYO?</h1>
                 </div>
                 <p>FONYO is a foundation of young scientists and intellectuals in the country, initiated in the West Department: Carrefour, Petit Goâve, and the Artibonite Department: Gonaïves and Saint Michel de l'Attalaye on October 24, 2008, marking its official public utility launch.</p>
                 <div class="buttons">
@@ -113,7 +107,6 @@
             </div>
         </section>
         
-
         <section class="container">
             <div class="block">
                 <h1>About Fonyo</h1>
@@ -148,81 +141,45 @@
                         <p>Promote action programs to strengthen the capacity of our agrarian system, environment, infrastructure, sanitation, health, reforestation, and others.</p>
                     </div>
                     <div class="objective">
-                        <img src="briefcase-5778886_1280.png" alt="Encourage Commitment">
-                        <h3>Encourage Commitment</h3>
-                        <p>Encourage young people to fully commit to the structural evolution of scientific affairs and all other areas.</p>
+                        <img src="briefcase-5778886_1280.png" alt="Cultural Development">
+                        <h3>Cultural Development</h3>
+                        <p>Promote professional, cultural, intellectual, and social development.</p>
+                    </div>
+                    <div class="objective">
+                        <img src="target-1754327_1280.png" alt="Haitian Culture">
+                        <h3>Promote Haitian Culture</h3>
+                        <p>Promote the values of the Haitian culture and defend human rights.</p>
                     </div>
                 </div>
-                <div class="buttons">
-                    <a href="our-team.html" class="btn-green">MEET OUR TEAM</a>
-                    <a href="https://aiwaapp.ai/site/48120/contact-us" class="btn-yellow"> SIGN UP NOW</a>
-                    <a href="donate.html" class="btn">DONATE</a>
-                </div>
+                <a href="https://aiwaapp.ai/site/48120/contact-us" class="btn">Sign Up</a>
             </div>
+        </section>
 
+    </main>
 
-            <div class="block">
-                <div class="flex-container">
-                    <div class="image">
-                        <img src="WhatsApp Img.png" alt="FONYO Member">
+    <footer>
+        <section class="footer-content">
+            <div class="container">
+                <div class="flex-container footer-flex-container">
+                    <div class="logo-section">
+                        <a href="index.html">
+                            <img src="Logo YODYA.png" alt="YODYA INC Logo">
+                        </a>
+                        <p>&copy; 2023 Yodya Foundation Inc. All Rights Reserved.</p>
                     </div>
-                    <div class="content">
-                        <h2> Together, we give</h2>
-                        <p>We bring together the aspirations of other foundations within the Haitian community. It comprises members (founders, honorary members, and supporters) who are courageous, motivated, knowledgeable, duty-bound, and responsible young people committed to saying no to violence in all its forms... and, yes, to equal rights as well.</p>
-                        <a href="about.html" class="btn">LEARN MORE</a>
-                        <a href="https://aiwaapp.ai/site/48120/contact-us" class="btn yellow-btn">SIGN UP NOW</a>
- <a href="donate.html" class="btn">DONATE</a>
+                    <div class="footer-nav">
+                        <ul class="nav-links">
+                            <li><a href="english.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="our-team.html">Our Team</a></li>
+                            <li><a href="news-events.html">News</a></li>
+                            <li><a href="donate.html">Donate</a></li>
+                            <li><a href="https://aiwaapp.ai/site/48120/contact-us">Contact</a></li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-    
-    
-            
-
-               
-        <section class="container video-section">
-            <div class="block">
-                <div class="title">
-                    <span>More About FONYO.</span>
-                </div>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/5DAGnlaikp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="buttons">
-                    <a href="about.html" class="btn-yellow">LEARN MORE</a>
-                    <a href="https://aiwaapp.ai/site/48120/contact-us" class="btn-green">SIGN UP NOW</a>
-                    <a href="donate.html" class="btn-yellow">DONATE</a>
                 </div>
             </div>
         </section>
-        
-    
-
-          
-</section>            
-
-    
-        
-    </main>
-    <footer>
-            <div class="contact-block">
-                <div class="contact-content">
-                    <h2>Yodya Inc</h2>
-                    <h3>CONTACT US</h3>
-                    <p>lyvensguerrier@gmail.com</p>
-                    <p>Lyvens Guerrier</p>
-                    <p>(470)312-6510</p>
-                    <p>(347)329-8595</p>
-                    <p>Haiti: (509)3486-8855</p>
-                    <h3>OUR LOCATION</h3>
-                    <p>115 White Park Place APt</p>
-                    <p>Y6, Dallas GA 30132</p>
-                </div>
-                <div class="motto">
-                    <h2>Donne-moi ta main, et à eux, nous donnons</h2>
-                    <h2>Give me your hand and, to them, we give.</h2>
-                </div>
-            </div>
     </footer>
 </body>
 </html>
