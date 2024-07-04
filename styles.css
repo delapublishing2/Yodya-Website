@@ -857,3 +857,48 @@ color: white; }
     max-width: 100%;
     border-radius: 10px;
 }
+
+/*our history section */
+
+.timeline-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.timeline-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.timeline-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.timeline-section img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.timeline-content {
+    max-width: 800px;
+    text-align: center;
+}
+.timeline-year {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.timeline-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.timeline-link {
+    font-size: 18px;
+    color: #0073e6;
+    text-decoration: none;
+}
+.timeline-link:hover {
+    text-decoration: underline;
+}
