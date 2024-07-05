@@ -625,127 +625,72 @@ color: white; }
 
 .meet-team .objective img { border-radius: 100px;}
 
-
-/* General block styling for Haiti info */
-.block.haiti-info {
+/* General block styling for info sections */
+.block.info-block {
     padding: 20px;
     background-color: #f0f0f0; /* Example background color */
 }
 
-/* Flex container styling for Haiti info */
-.haiti-flex-container {
+/* Flex container styling for info sections */
+.info-flex-container {
     display: flex;
     align-items: flex-start; /* Align items to the top */
 }
 
-/* Content styling for Haiti info */
-.haiti-content {
+/* Content styling for info sections */
+.info-content {
     flex: 1;
     text-align: left;
     padding-right: 20px; /* Space between content and image */
 }
 
-/* Image styling for Haiti info */
-.haiti-image {
+/* Image styling for info sections */
+.info-image {
     flex: 1;
     text-align: center; /* Center image within its flex item */
 }
 
-.haiti-image img {
+.info-image img {
     max-width: 100%;
     height: auto;
 }
 
 /* Additional styling for elements within the content */
-.haiti-content h2 {
+.info-content h2 {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-.haiti-content p {
+.info-content p {
     margin-bottom: 20px;
 }
 
-.haiti-content ul {
+.info-content ul {
     list-style: none; /* Remove default list styling */
     padding-left: 0;
 }
 
-.haiti-content ul li {
+.info-content ul li {
     margin-bottom: 10px;
     text-align: left; /* Ensure list items are aligned to the left */
 }
 
-.haiti-content .btn.yellow-btn {
-    background-color: #FFC107;
-    color: black;
+.info-content .btn {
+    display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 25px;
-    display: inline-block;
     margin-top: 20px;
 }
 
-/*content aligned left text rigth img */
-
-/* General block styling for info */
-.block-lefta {
-    padding: 20px;
-    background-color: #f0f0f0; /* Example background color */
-}
-
-/* Flex container styling for Haiti info */
-.haiti-flex-container {
-    display: flex;
-    align-items: flex-start; /* Align items to the top */
-}
-
-/* Content styling for Haiti info */
-.haiti-content {
-    flex: 1;
-    text-align: left;
-    padding-right: 20px; /* Space between content and image */
-}
-
-/* Image styling for Haiti info */
-.haiti-image {
-    flex: 1;
-    text-align: center; /* Center image within its flex item */
-}
-
-.haiti-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Additional styling for elements within the content */
-.haiti-content h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.haiti-content p {
-    margin-bottom: 20px;
-}
-
-.haiti-content ul {
-    list-style: none; /* Remove default list styling */
-    padding-left: 0;
-}
-
-.haiti-content ul li {
-    margin-bottom: 10px;
-    text-align: left; /* Ensure list items are aligned to the left */
-}
-
-.haiti-content .btn.yellow-btn {
+.info-content .btn.yellow-btn {
     background-color: #FFC107;
     color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 25px;
-    display: inline-block;
-    margin-top: 20px;
+}
+
+.info-content .btn-green {
+    background-color: green;
+    color: white;
 }
 
 .donation-block {
