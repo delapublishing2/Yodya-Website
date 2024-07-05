@@ -959,14 +959,14 @@ color: white; }
 
 
 
-.news-grid {
+
+.grid-layout {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
-    margin: 50px;
 }
 
-.news-item {
+.grid-item {
     background-color: white;
     padding: 1rem;
     border-radius: 8px;
