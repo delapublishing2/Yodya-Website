@@ -176,6 +176,10 @@ header {
 .header-history { background-image: url('MAIN\ IMAGE\ REFOCUSED.png')
 
 }
+
+.header-haiti-about {
+    background-image: url('MAIN\ IMAGE\ REFOCUSED.png')
+}
 /* General Container */
 .container {
     max-width: 1200px;
