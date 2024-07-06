@@ -1,3 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yodya Foundation Inc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Logo YODYA.png" alt="YODYA INC Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="english.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="our-team.html"> Team</a></li>
+                <li><a href="news-events.html">News</a></li>
+                <li><a href="haiti.html">Haiti</a></li>
+                <li><a href="our-history.html"> History</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="https://aiwaapp.ai/site/48120/contact-us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Help Us Support Haiti in Its Time of Need</h1>
+            <p>Your donation can make a difference in the lives of millions.</p>
+            <a href="#donate" class="btn">Donate Now</a>
+        </div>
+    </header>
+
+    <!-- Introduction -->
+    <section id="about">
+        <h2>About Haiti</h2>
+        <p>Provide a brief overview of Haiti, its culture, history, and significance.</p>
+    </section>
+
+    <!-- Current Crisis -->
+    <section id="crisis">
+        <h2>The Current Crisis</h2>
+        <p>Detailed description of the crisis, key statistics, and personal stories.</p>
+    </section>
+
+    <!-- Our Mission -->
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>Explain what your organization aims to achieve and how donations will be used.</p>
+    </section>
+
+    <!-- How Donations Help -->
+    <section id="how-help">
+        <h2>How Your Donations Help</h2>
+        <p>Breakdown of how donations will be used and success stories.</p>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate">
+        <h2>Donate Now</h2>
+        <p>Quick description of the importance of donations.</p>
+        <!-- Donation Options -->
+        <form id="donation-form">
+            <label>
+                <input type="radio" name="donation" value="10">$10
+            </label>
+            <label>
+                <input type="radio" name="donation" value="25">$25
+            </label>
+            <label>
+                <input type="radio" name="donation" value="50">$50
+            </label>
+            <label>
+                <input type="radio" name="donation" value="100">$100
+            </label>
+            <div>
+                <input type="number" name="custom-amount" id="custom-amount" placeholder="Enter custom amount">
+            </div>
+            <button class="donate-btn" id="stripe-donate-btn">Donate with Card</button>
+            <div id="paypal-button-container"></div>
+        </form>
+    </section>
+
+    <!-- Testimonials/Impact Stories -->
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>Stories from people who have been helped by your organization and testimonials from donors or volunteers.</p>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta">
+        <h2>Make a Difference Today</h2>
+        <a href="#donate" class="btn">Donate Now</a>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about the crisis and how donations are used, with answers.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-block">
+            <div class="contact-content">
+                <h2>Yodya Inc</h2>
+                <h3>CONTACT US</h3>
+                <p>lyvensguerrier@gmail.com</p>
+                <p>Lyvens Guerrier</p>
+                <p>(470)312-6510</p>
+                <p>(347)329-8595</p>
+                <p>Haiti: (509)3486-8855</p>
+                <h3>OUR LOCATION</h3>
+                <p>115 White Park Place APt</p>
+                <p>Y6, Dallas GA 30132</p>
+            </div>
+            <div class="motto">
+                <h2>Donne-moi ta main, et à eux, nous donnons</h2>
+                <h2>Give me your hand and, to them, we give.</h2>
+            </div>
+        </div>
+</footer>
+
+    <!-- Scripts -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
 <section class="header header-team">
     <div class="overlay"></div>
     <div class="header-content">
