@@ -11,23 +11,25 @@
         <h2>Support Our Cause</h2>
         <p>Your generous donations help us make a difference in the lives of many. Choose an amount or enter a custom amount to contribute.</p>
         
-        <div class="donation-options">
-            <label>
-                <input type="radio" name="donation" value="10">$10
-            </label>
-            <label>
-                <input type="radio" name="donation" value="25">$25
-            </label>
-            <label>
-                <input type="radio" name="donation" value="50">$50
-            </label>
-            <label>
-                <input type="radio" name="donation" value="100">$100
-            </label>
-        </div>
-        
-        <div class="custom-donation">
-            <input type="number" name="custom-amount" id="custom-amount" placeholder="Enter custom amount">
+        <div class="container">
+            <div class="donation-block-page">
+                <h2>Make a Donation</h2>
+                <p>Your generous donation will help us achieve our mission and make a difference in the lives of those we serve.</p>
+    
+                <div class="donation-options">
+                    <label><input type="radio" name="donation-amount" value="25"> $25</label>
+                    <label><input type="radio" name="donation-amount" value="50"> $50</label>
+                    <label><input type="radio" name="donation-amount" value="100"> $100</label>
+                    <label><input type="radio" name="donation-amount" value="other"> Other</label>
+                </div>
+    
+                <div class="custom-donation">
+                    <input type="text" id="custom-amount" placeholder="Enter custom amount">
+                </div>
+    
+                <button class="donate-btn" onclick="handleDonation()">Donate</button>
+                <div id="paypal-button-container"></div>
+            </div>
         </div>
         
         <button class="donate-btn" id="stripe-donate-btn">Donate with Card</button>
