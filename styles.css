@@ -276,15 +276,8 @@ header {
     align-items: center;
     justify-content: center; /* Center the content horizontally */
     padding: 0 50px; /* Add padding to the sides */
+    background-color: rgba(0, 0, 0, 0.7);
 }
-.container-about.haiti-about-header .content {
-    background-color: rgba(0, 0, 0, 0.7); /* Add background for readability */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px; /* Limit the width for better readability */
-    margin-right: auto; /* Push the content to the left */
-}
-
 
 .container-about .content {
     background-color: rgba(0, 0, 0, 0.7); /* Add background for readability */
