@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Now</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <div class="donation-block">
@@ -29,6 +30,13 @@
         <div class="custom-donation">
             <input type="number" name="custom-amount" id="custom-amount" placeholder="Enter custom amount">
         </div>
+
+        <form id="payment-form">
+            <div id="card-element"><!-- A Stripe Element will be inserted here. --></div>
+            <button id="submit">Pay</button>
+            <div id="payment-message" class="hidden"></div>
+        </form>
+        
         
         <button class="donate-btn" id="stripe-donate-btn">Donate with Card</button>
         <div id="paypal-button-container"></div>

@@ -68,34 +68,50 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Stripe and PayPal integration
+    // Stripe integration
     const stripe = Stripe('YOUR_STRIPE_PUBLISHABLE_KEY');
-    const stripeDonateBtn = document.getElementById('stripe-donate-btn');
+    const elements = stripe.elements();
+    const cardElement = elements.create('card');
+    cardElement.mount('#card-element');
 
-    stripeDonateBtn.addEventListener('click', async function() {
-        let selectedAmount = document.querySelector('input[name="donation"]:checked') ? document.querySelector('input[name="donation"]:checked').value : customAmountInput.value;
-        if (!selectedAmount) {
-            alert('Please select or enter a donation amount.');
-            return;
-        }
+    const form = document.getElementById('payment-form');
+    form.addEventListener('submit', async (event) => {
+        event.preventDefault();
 
-        // Call your backend to create a Checkout Session
-        const response = await fetch('/create-checkout-session', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
+        const { paymentIntent, error } = await stripe.createPaymentMethod({
+            type: 'card',
+            card: cardElement,
+            billing_details: {
+                // Include any additional collected billing details.
             },
-            body: JSON.stringify({ amount: selectedAmount })
         });
-        const session = await response.json();
 
-        // Redirect to Stripe Checkout
-        const result = await stripe.redirectToCheckout({ sessionId: session.id });
-        if (result.error) {
-            alert(result.error.message);
+        if (error) {
+            console.log(error);
+            document.getElementById('payment-message').innerText = error.message;
+            document.getElementById('payment-message').classList.remove('hidden');
+        } else {
+            // Proceed with the payment
+            const response = await fetch('/create-payment-intent', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ paymentMethodId: paymentIntent.id, amount: selectedAmount })
+            });
+            const paymentResult = await response.json();
+
+            if (paymentResult.error) {
+                document.getElementById('payment-message').innerText = paymentResult.error.message;
+                document.getElementById('payment-message').classList.remove('hidden');
+            } else {
+                document.getElementById('payment-message').innerText = 'Payment successful!';
+                document.getElementById('payment-message').classList.remove('hidden');
+            }
         }
     });
 
+    // PayPal button rendering
     paypal.Buttons({
         createOrder: function(data, actions) {
             let selectedAmount = document.querySelector('input[name="donation"]:checked') ? document.querySelector('input[name="donation"]:checked').value : customAmountInput.value;
