@@ -994,14 +994,33 @@ color: white; }
         flex-direction: row; /* Align buttons horizontally on larger screens */
     }
 }
-
 /* Additional alignment classes */
-.overlay-section .align-right  {
-    margin-left: auto; /* Align content to the right */
-    text-align: right; /* Align text to the right */
+.overlay-section.align-right .overlay-container {
+    justify-content: flex-end; /* Align content to the right */
 }
 
-.overlay-section .align-left {
-    margin-right: auto; /* Align content to the left */
-    text-align: left; /* Align text to the left */
+.overlay-section.align-left .overlay-container {
+    justify-content: flex-start; /* Align content to the left */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .overlay-section {
+        padding: 0 20px;
+        height: auto;
+        justify-content: center;
+    }
+
+    .overlay-container {
+        justify-content: center;
+    }
+
+    .overlay-content {
+        margin: 0;
+        text-align: center;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
 }
