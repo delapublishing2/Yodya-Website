@@ -967,25 +967,24 @@ color: white; }
     gap: 10px;
 }
 
-.overlay-content .buttons a {
+.overlay-content .btn a {
     padding: 10px 20px;
     text-decoration: none;
     color: white;
-    background-color: #333; /* Example button background color */
-    border-radius: 5px;
+    background-color: var(--primary-color); /* Example button background color */
     text-align: center;
 }
 
-.overlay-content .buttons .btn-yellow {
+.overlay-content .btn .btn-yellow {
     background-color: var(--primary-color);
     color: black;
 }
 
-.overlay-content .buttons .btn-green {
+.overlay-content .btn .btn-green {
     background-color: var(--secondary-color);
 }
 
-.overlay-content .buttons .btn {
+.overlay-content .btn .btn {
     background-color: var(--primary-color);
 }
 
