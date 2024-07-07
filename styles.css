@@ -914,51 +914,51 @@ color: white; }
  
 /* background w/ overlay and content */
 
-.overlay-section {
+.custom-overlay-section {
     position: relative;
     background-image: url('pictures/aaron-burden-KOLEBgHxzcI-unsplash.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
-    color: white;
     display: flex;
-    justify-content: right; /* Center the container horizontally */
-    align-items: center; /* Center the container vertically */
+    align-items: center; /* Center vertically */
+    padding: 0 50px;
 }
 
-.overlay-container {
+.custom-overlay-container {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.overlay-container::before {
+.custom-overlay-container::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity as needed */
-    z-index: 1; /* Ensure the overlay is above the background image but below the text */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    z-index: 1; /* Ensure overlay is above the background but below content */
 }
 
-.overlay-content {
+.custom-overlay-content {
     position: relative;
-    z-index: 2; /* Ensure the content is above the overlay */
-    padding: 20px;
+    z-index: 2; /* Ensure content is above overlay */
+    color: white;
     max-width: 800px;
 }
 
-.overlay-content h1 {
+.custom-overlay-content h1 {
     margin-bottom: 20px;
     font-size: 3em;
 }
 
-.overlay-content p {
+.custom-overlay-content p {
     margin-bottom: 20px;
     font-size: 1.2em;
 }
+
 
 .overlay-content .buttons {
     display: flex;
@@ -989,37 +989,23 @@ color: white; }
 
 /* Responsive adjustments */
 @media (min-width: 768px) {
-    .overlay-content .buttons {
+    .custom-overlay-content .buttons {
         flex-direction: row; /* Align buttons horizontally on larger screens */
     }
 }
-/* Additional alignment classes */
-.overlay-section.align-right .overlay-container {
-    justify-content: flex-end; /* Align content to the right */
+
+/* Alignment classes */
+.center-align .custom-overlay-content {
+    text-align: center;
+    margin: 0 auto; /* Center content horizontally */
 }
 
-.overlay-section.align-left .overlay-container {
-    justify-content: flex-start; /* Align content to the left */
+.left-align .custom-overlay-content {
+    text-align: left;
+    margin-left: 0; /* Align content to the left */
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    .overlay-section {
-        padding: 0 20px;
-        height: auto;
-        justify-content: flex-start;
-    }
-
-    .overlay-container {
-        justify-content: flex-start;
-    }
-
-    .overlay-content {
-        margin: 0;
-        text-align: right;
-    }
-
-    .buttons {
-        justify-content: start;
-    }
+.right-align .custom-overlay-content {
+    text-align: right;
+    margin-right: 0; /* Align content to the right */
 }
