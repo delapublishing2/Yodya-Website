@@ -996,12 +996,12 @@ color: white; }
 }
 
 /* Additional alignment classes */
-.overlay-section.align-right .content-about {
+.overlay-section .align-right  {
     margin-left: auto; /* Align content to the right */
     text-align: right; /* Align text to the right */
 }
 
-.overlay-section.align-left .content-about {
+.overlay-section .align-left {
     margin-right: auto; /* Align content to the left */
     text-align: left; /* Align text to the left */
 }
