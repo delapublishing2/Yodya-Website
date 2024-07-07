@@ -922,8 +922,8 @@ color: white; }
     height: 100vh;
     color: white;
     display: flex;
-    justify-content: flex-end; /* Center the container horizontally */
-    align-items: right; /* Center the container vertically */
+    justify-content: right; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
 }
 
 .overlay-container {
@@ -1007,11 +1007,11 @@ color: white; }
     .overlay-section {
         padding: 0 20px;
         height: auto;
-        justify-content: flex-end;
+        justify-content: flex-start;
     }
 
     .overlay-container {
-        justify-content: flex-end;
+        justify-content: flex-start;
     }
 
     .overlay-content {
@@ -1020,6 +1020,6 @@ color: white; }
     }
 
     .buttons {
-        justify-content: center;
+        justify-content: start;
     }
 }
