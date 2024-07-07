@@ -922,8 +922,8 @@ color: white; }
     height: 100vh;
     color: white;
     display: flex;
-    justify-content: center; /* Center the container horizontally */
-    align-items: center; /* Center the container vertically */
+    justify-content: flex-end; /* Center the container horizontally */
+    align-items: right; /* Center the container vertically */
 }
 
 .overlay-container {
@@ -948,7 +948,6 @@ color: white; }
     z-index: 2; /* Ensure the content is above the overlay */
     padding: 20px;
     max-width: 800px;
-    text-align: center; /* Center text alignment */
 }
 
 .overlay-content h1 {
@@ -1008,16 +1007,16 @@ color: white; }
     .overlay-section {
         padding: 0 20px;
         height: auto;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     .overlay-container {
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     .overlay-content {
         margin: 0;
-        text-align: center;
+        text-align: right;
     }
 
     .buttons {
