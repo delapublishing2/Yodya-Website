@@ -976,17 +976,17 @@ color: white; }
     text-align: center;
 }
 
-.overlay-content .buttons .yellow-btn {
-    background-color: yellow;
+.overlay-content .buttons .btn-yellow {
+    background-color: var(--primary-color);
     color: black;
 }
 
-.overlay-content .buttons .green-btn {
-    background-color: green;
+.overlay-content .buttons .btn-green {
+    background-color: var(--secondary-color);
 }
 
 .overlay-content .buttons .btn {
-    background-color: grey;
+    background-color: var(--primary-color);
 }
 
 /* Responsive adjustments */
