@@ -274,11 +274,11 @@ header {
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: flex-end; /* Align content to the right */
     padding: 0 50px; /* Add padding to the sides */
 }
 
-.container-about.haiti-about-header::before {
+.container-about.haiti-about-header .overlay {
     content: '';
     position: absolute;
     top: 0;
@@ -289,16 +289,24 @@ header {
     z-index: -1; /* Ensure the overlay is behind other content */
 }
 
-
-
-.container-about .content {
-    background-color: rgba(0, 0, 0, 0.7); /* Add background for readability */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px; /* Limit the width for better readability */
-    margin-right: auto; /* Push the content to the left */
+.content-about {
+    position: relative; /* Ensure the content is positioned above the overlay */
+    max-width: 600px;
+    margin-right: auto; /* Add margin to the left to push content to the right */
+    text-align: right; /* Align text to the right */
 }
 
+.about-header h1 {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 2.5em;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.content-about p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
 
 
 .container-about img {
