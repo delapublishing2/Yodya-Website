@@ -395,6 +395,7 @@ h2 {
 
 p {
     font-size: medium;
+padding-top: 1rem;
 font-family: "Nunito Sans", sans-serif;
 font-optical-sizing: auto;
 font-weight: 500;
