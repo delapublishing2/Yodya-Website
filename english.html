@@ -73,6 +73,27 @@
             <button class="donate-btn">Donate Now</button>
         </div>
     </div>
+
+    <div class="form-container">
+        <h2>Need assistance with paying?</h2>
+        <p> Now, if you need assistance with paying, want to pay by check or money order, or would like to donate items such as food, clothes, books, computers, ect, then please fill out the form below,  </p>
+        <p> EPlease make the check in the name of Yodya Foundations Inc</p>
+        <form action="process_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="phone" id="phone" name="phone" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
         
     <section class="container-img">
         <div class="overlay-text">
@@ -204,7 +225,7 @@
 
         <div class="form-container">
             <h2>Contact Us</h2>
-            <p> Now if you want to be a sponsor, please fill otu the form below.  </p>
+            <p> Now if you want to be a sponsor, please fill out the form below.  </p>
             <p> Each sponsor will recieve marketing on our website on our website based on the sponsorship ad you have chosen.</p>
             <form action="process_form.php" method="POST">
                 <label for="name">Name:</label>
