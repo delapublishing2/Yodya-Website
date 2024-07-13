@@ -204,8 +204,9 @@
             <h2>Our Sponsors</h2>
             <p>We are grateful to our sponsors for their generous support.</p>
             <div class="sponsor-logos">
-                <a href="https://www.sponsor1.com" target="_blank" class="sponsor-logo">
-                    <img src="sponsor1-logo.png" alt="Sponsor 1">
+                <a href="https://www.sponsor1.com" target="_blank" class="logo">
+                    <img src="pictures/JashawkeProductions Logo.jpeg" alt="JashawkeProductions">
+                    <p> </p>
                 </a>
                 <a href="https://www.sponsor2.com" target="_blank" class="sponsor-logo">
                     <img src="sponsor2-logo.png" alt="Sponsor 2">
@@ -214,7 +215,21 @@
         </div>
     
 
-          
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form action="process_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
 </section>            
 
     
