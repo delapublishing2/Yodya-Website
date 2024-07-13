@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "omiacaralina@gmail.com"; // Replace with the owner's email address
     $subject = "New Contact Form Submission";
     $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
-    $headers = "From: noreply@example.com"; // Replace with a valid sender email address
+    $headers = "From: omiacaralina@gmail.com"; // Replace with a valid sender email address
 
     if (mail($to, $subject, $body, $headers)) {
         echo "Email successfully sent!";
