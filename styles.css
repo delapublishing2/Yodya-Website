@@ -373,7 +373,7 @@ header {
 h1 {
     color: #333;
     border-bottom: 8px solid --primary-color;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     margin-left: 20rem;
     margin-right: 20rem; 
     font-size: xx-large;
