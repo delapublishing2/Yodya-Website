@@ -1087,6 +1087,15 @@ color: white; }
 .form-container h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    max-width: 40%;
+    margin: auto;
+}
+
+.form-container p {
+    font-size: 2em;
+    margin-bottom: 20px;
+    max-width: 40%;
+    margin: auto;
 }
 
 form label {
@@ -1102,6 +1111,7 @@ form input, form textarea {
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    max-width: 40%;
 }
 
 form button {
