@@ -501,15 +501,19 @@ font-variation-settings:
     color: black;
     padding: 40px;
 }
+
 .contact-content {
     flex: 1;
 }
+
 .contact-content h2, .contact-content h3 {
     margin-bottom: 10px;
 }
+
 .contact-content p {
     margin: 5px 0;
 }
+
 .motto {
     flex: 1;
     display: flex;
@@ -518,9 +522,27 @@ font-variation-settings:
     align-items: flex-end;
     text-align: right;
 }
+
 .motto h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
+}
+
+/* Social Media Icon Styles */
+.social-media-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #555;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #FFC107;
 }
 
 /* Responsive Design */
