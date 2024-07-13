@@ -1,8 +1,8 @@
 
 
 :root {
-    --primary-color:#ffcc00;
-    --secondary-color: #5BFD4D;
+    --primary-color:#f3d654;
+    --secondary-color: #9adc85;
     --background-color: #f0f0f0;
     --text-color: #333;
     --white: #fff;
@@ -145,7 +145,7 @@ header {
    max-width: 25%; 
 }
 .btn {
-    background-color: #5BFD4D;
+    background-color: var(--secondary-color);
     color: black;
     padding: 10px 20px;
     text-decoration: none;
@@ -239,14 +239,14 @@ header {
     margin-top: 20px;
 }
 .btn-yellow {
-    background-color: #ffd700;
+    background-color: var(--primary-color);
     color: black;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 25px;
 }
 .btn-green {
-    background-color: #5BFD4D;
+    background-color: var(--secondary-color);
     color: black;
     padding: 10px 20px;
     text-decoration: none;
@@ -351,7 +351,7 @@ header {
 }
 
 .container-about .yellow-btn {
-    background-color: #FFC107;
+    background-color: var(--primary-color);
     color: black; /* Ensure text is readable */
     padding: 10px 20px;
     text-decoration: none;
@@ -359,7 +359,7 @@ header {
 }
 
 .container-about .green-btn {
-    background-color: #5BFD4D;
+    background-color: var(--secondary-color);
     color: black; /* Ensure text is readable */
     padding: 10px 20px;
     text-decoration: none;
@@ -372,7 +372,7 @@ header {
 }
 h1 {
     color: #333;
-    border-bottom: 8px solid #ffcc00;
+    border-bottom: 8px solid --primary-color;
     padding-bottom: 2rem;
     margin-left: 20rem;
     margin-right: 20rem; 
@@ -449,7 +449,7 @@ font-variation-settings:
     margin-bottom: 10px;
 }
 .yellow-btn {
-    background-color: #FFC107;
+    background-color: var(--primary-color);
 }
 
 /* Image Block */
@@ -701,7 +701,7 @@ color: white; }
 }
 
 .info-content .btn.yellow-btn {
-    background-color: #FFC107;
+    background-color: var(--primary-color);
     color: black;
 }
 
@@ -755,7 +755,7 @@ color: white; }
 }
 
 .donate-btn {
-    background-color: #FFC107;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -817,7 +817,7 @@ color: white; }
 }
 
 .donate-btn {
-    background-color: #FFC107;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -1106,7 +1106,7 @@ form input, form textarea {
 }
 
 form button {
-    background-color: #FFC107;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 10px 20px;
     font-size: 1.2em;
