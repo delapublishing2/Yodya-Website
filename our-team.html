@@ -201,6 +201,7 @@
                     <input type="radio" name="donation" value="100">$100
                 </label>
             </div>
+
             
             <div class="custom-donation">
                 <input type="number" name="custom-amount" id="custom-amount" placeholder="Enter custom amount">
@@ -208,6 +209,27 @@
             
             <button class="donate-btn">Donate Now</button>
         </div>
+    </div>
+
+    <div class="form-container">
+        <h2>Need assistance with paying, want to donate through money order or check, or wish to donate supplies?</h2>
+        <p> Now, if you need assistance with paying, want to pay by check or money order, or would like to donate items such as food, clothes, books, computers, ect, then please fill out the form below,  </p>
+        <p> Please make the check in the name of Yodya Foundations Inc</p>
+        <form action="process_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="phone" id="phone" name="phone" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
     </div>
     <section class="container-img">
         <div class="overlay-text">
@@ -218,26 +240,22 @@
         </div>
 </section>
 </main>
-<footer>
-    <div class="contact-block">
-        <div class="contact-content">
-            <h2>Yodya Inc</h2>
-            <h3>CONTACT US</h3>
-            <p>lyvensguerrier@gmail.com</p>
-            <p>Lyvens Guerrier</p>
-            <p>(470)312-6510</p>
-            <p>(347)329-8595</p>
-            <p>Haiti: (509)3486-8855</p>
-            <h3>OUR LOCATION</h3>
-            <p>107 Enterprise Path</p>
-            <p>Ste 304-2 Hiram Ga, 30141</p>
-           <p> © 2024  Yodya Foundation INC. Tax ID: 99-2171138. Donations and contributions are tax-deductable as allowed by law. Let's help Haiti together</p>
-        </div>
-        <div class="motto">
-            <h2>Donne-moi ta main, et à eux, nous donnons</h2>
-            <h2>Give me your hand and, to them, we give.</h2>
-        </div>
-    </div>
+<div class="social-media-icons">
+    <a href="https://www.facebohttps://www.facebook.com/groups/554038474721632/posts/1163591747099632/?locale=sw_KEok.com" target="_blank" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.twitter.com" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+</div>
+</div>
+</div>
 </footer>
 </body>
 </html>
