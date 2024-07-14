@@ -45,10 +45,10 @@ header {
     color: black;
     font-size: 1.5rem;
     text-decoration: none;
-    align-items: center;
-    margin-top: 5rem;
-
+    display: flex; /* Added */
+    align-items: center; /* Added */
 }
+
 .nav-links {
     list-style-type: none;
     display: flex;
