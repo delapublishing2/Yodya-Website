@@ -38,7 +38,7 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 80px;
+    padding: 0 20px;
     width: 100%;
 }
 .logo a {
@@ -51,7 +51,7 @@ header {
     display: flex;
 }
 .nav-links li {
-    margin-right: 15px;
+    margin-right: 30px;
 }
 .nav-links li a {
     color: black;
