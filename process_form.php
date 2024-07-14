@@ -12,12 +12,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    // Send email
+    // Prepare email
     $to = "omiacaralina@gmail.com"; // Replace with the owner's email address
     $subject = "New Contact Form Submission";
-    $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
-    $headers = "From: omiacaralina@gmail.com"; // Replace with a valid sender email address
+    $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
+    $headers = "From: infoy@yodya.org\r\n"; // Replace with a valid sender email address
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 
+    // Send email
     if (mail($to, $subject, $body, $headers)) {
         echo "Email successfully sent!";
     } else {
@@ -26,7 +30,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Store email address in a file
     $file = 'emails.txt';
-    $current = file_get_contents($file);
+    if (file_exists($file)) {
+        $current = file_get_contents($file);
+    } else {
+        $current = "";
+    }
     $current .= "$email\n";
     file_put_contents($file, $current);
 }
