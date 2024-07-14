@@ -1,5 +1,5 @@
 <?php
-$to = "omiacaralina@gmail.com";
+$to = "rasberryjuiced@gmail.com";
 $subject = "Test Email";
 $body = "This is a test email sent from PHP script.";
 $headers = "From: omiacaralina@gmail.com";
